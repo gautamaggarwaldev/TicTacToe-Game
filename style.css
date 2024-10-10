@@ -14,8 +14,8 @@ body {
 
 .container {
     display: grid;
-    grid-template-columns: repeat(3,30vh);
-    grid-template-rows: repeat(3,30vh);
+    grid-template-columns: repeat(3,25vh);
+    grid-template-rows: repeat(3,25vh);
 }
 
 .box {
@@ -43,4 +43,21 @@ body {
 
 .br {
     border-right: 0;
+}
+
+.win-status {
+    margin: auto;
+    width: 10vw;
+    height: 10vh;
+    background-color:chartreuse;
+    font-size: 20px;
+}
+
+#reset {
+    padding: 10px;
+    background-color: orangered;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 20px;
 }
