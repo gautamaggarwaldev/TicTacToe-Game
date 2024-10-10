@@ -23,6 +23,11 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
+}
+
+.box:hover {
+    background-color:rgb(248, 230, 206);
 }
 
 .box-text {
@@ -60,4 +65,9 @@ body {
     border-radius: 5px;
     color: white;
     font-size: 20px;
+    cursor: pointer;
+}
+
+#reset:hover {
+    background-color: rgb(232, 79, 23);
 }

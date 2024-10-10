@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 let winInfo = document.getElementsByClassName('win-status');
                 winInfo[0].innerText = `${boxtext[e[0]].innerText} Win`;
                 gameOver = true;
-
+                alert("Game Over! " + boxtext[e[0]].innerText + " wins!");
             }
         })
     }
@@ -33,6 +33,8 @@ document.addEventListener('DOMContentLoaded', function () {
             ele.innerHTML = "";
         })
         document.getElementsByClassName('win-status')[0].innerText = "WHO WIN";
+        turn = "X";
+        gameOver = false;
     })
 
 
@@ -47,6 +49,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 if(!gameOver) {
                     turn = changeTurn();
                 }
+                
             }
         })
     })
