@@ -19,9 +19,10 @@ document.addEventListener('DOMContentLoaded', function () {
             if((boxtext[e[0]].innerText === boxtext[e[1]].innerText) && (boxtext[e[1]].innerText === boxtext[e[2]].innerText) && boxtext[e[0]].innerText !== '') {
                 let winInfo = document.getElementsByClassName('win-status');
                 winInfo[0].innerText = `${boxtext[e[0]].innerText} Win`;
+                alert(`${boxtext[e[0]].innerText} Wins the Game!`); 
                 gameOver = true;
-                alert("Game Over! " + boxtext[e[0]].innerText + " wins!");
-            }
+            }   
+            
         })
     }
 
